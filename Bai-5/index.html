@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 500px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form method="get" action="simpleform.html">
+        <fieldset>
+          <legend>Order Form</legend>
+          <p>What would you like to buy?</p>
+          <select name="product" id="product">
+            <option>keo mut</option>
+            <option>but chi</option>
+            <option>but muc</option>
+            <option>thuoc ke</option>
+          </select>
+          <p>How many would you like to order?</p>
+          <ul>
+            <li type="circle">1 - $10</li>
+            <li type="circle">2 - $20</li>
+            <li type="circle">3 - $30</li>
+          </ul>
+          <label for="firstName">
+            Name
+            <br />
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="FirstName"
+            />
+          </label>
+          <label for="lastName">
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="LastName"
+            />
+          </label>
+          <br />
+          <label for="email">
+            Email <br />
+            <input type="email" name="email" id="email" />
+          </label>
+          <br />
+          <label for="phone">
+            Phone Number <br />
+            <input type="tel" name="phone" id="phone" />
+          </label>
+          <br />
+          <input type="button" name="btSubmit" value="Submit" />
+          <input type="reset" name="btn-reset" value="reset" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

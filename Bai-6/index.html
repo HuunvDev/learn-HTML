@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: tahoma;
+      }
+
+      .container {
+        width: 500px;
+        margin: 50px auto;
+        border: 1px solid grey;
+        border-radius: 3px;
+      }
+
+      h1 {
+        background: darkorange;
+        text-align: center;
+        width: 98%;
+        margin: 8px auto;
+      }
+
+      label {
+        color: blue;
+        margin-left: 50px;
+      }
+      p.title-input {
+        display: inline-block;
+        width: 75px;
+      }
+      ul {
+        display: block;
+        margin-left: 67px;
+        margin-top: -15px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 20px;
+        color: coral;
+      }
+      input#user-name {
+        width: 300px;
+        padding: 5px;
+      }
+
+      input#email {
+        width: 300px;
+        padding: 5px;
+      }
+      input.submit {
+        margin-left: 130px;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      input.reset {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SỞ THÍCH CỦA BẠN</h1>
+      <form action="">
+        <label for="user-name"
+          ><p class="title-input">Họ và Tên</p>
+          <input type="text" id="user-name" class="user-name" />
+        </label>
+        <br />
+        <label for="email">
+          <p class="title-input">Email</p>
+          <input type="text" id="email" class="email" />
+        </label>
+        <br />
+        <label for=""
+          >Sở thích
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Thể Thao"
+              />
+              thể thao
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Lướt Web"
+              />
+              lướt web
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Du Lịch"
+              />
+              du lịch
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Âm nhạc"
+              />
+              âm nhạc
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Chơi game"
+              />
+              chơi game
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Đọc sách"
+              />
+              đọc sách
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interests"
+                value="Điện ảnh"
+              />
+              điện ảnh
+            </li>
+          </ul>
+        </label>
+        <input type="Submit" value="Gửi thông tin" class="submit" />
+        <input type="reset" value="Nhập lại" class="reset" />
+      </form>
+    </div>
+  </body>
+</html>

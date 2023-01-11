@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+    background-color: burlywood;
+}
+
+.container {
+    width: 1000px;
+    border: 1px solid grey;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+h1.heading {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+small.sub-heading {
+    color: grey;
+}
+
+hr {
+    border-top: 1px dashed grey;
+    border-bottom: none;
+}
+li{
+  list-style: none;
+    margin-top: 10px;
+    margin-left: -45px;
+    color: gray;
+}
+.active{
+  padding:0px 0px 10px 0px;
+}
+.active:focus-within{
+  background-color:blanchedalmond;
+}
+h5.title {
+    margin: 15px 0px;
+}
+
+select#age {
+    width: 250px;
+    padding: 3px;
+}
+
+select#income {
+    width: 250px;
+    padding: 3px;
+}
+
+ul {
+    font-size: 15px;
+}
+
+input.orther {
+    display: block;
+    margin-left: 26px;
+    margin-top: 9px;
+}
+small.sub-input_other {
+    margin-left: 26px;
+    margin-bottom: -26px;
+    margin-top: 5px;
+    display: block;
+}
+label {
+    display: flex;
+}
+
+input#Dollars {
+    width: 70px;
+    margin-right: 5px;
+}
+
+span.sub-price {
+    display: block;
+    font-size: 13px;
+    margin-top: 3px;
+}
+span.sub-cents {
+    display: block;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+input#cents {
+    width: 30px;
+    margin-left: 5px;
+}
+p.title{
+  font-size: 14px;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td.title{
+  text-align: left;
+}
+input[type="submit"] {
+    padding: 5px 10px;
+    display: block;
+    margin-top: 15px;
+}
+span.sub {
+    display: block;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Market Research Survey</h1>
+      <small class="sub-heading"
+        >Please take a few moments to complete this satisfaction survey.</small
+      >
+      <hr />
+      <form action="" class="form-group">
+        <div class=" get-age active">
+          <h5 class="title">What is your age range?</h5>
+          <select name="age" id="age">
+            <option value="18-24">18 - 24</option>
+            <option value="18-24">24 - 30</option>
+            <option value="18-24">30 - 45</option>
+            <option value="18-24">45 - 60</option>
+          </select>
+        </div>
+        <div class="get-income active">
+          <h5 class="title">What is your yearly income range?</h5>
+          <select name="get-income" id="income">
+            <option value=" $0 - $25,000">$0 - $25,000</option>
+            <option value=" $25,000 - $50,000">$25,000 - $50,000</option>
+            <option value=" $50,000 - $75,000">$50,000 - $75,000</option>
+            <option value=" $75,000 - $100,000">$75,000 - $100,000</option>
+          </select>
+        </div>
+        <div class="gender active">
+          <h5 class="title">Gender Identity</h5>
+          <ul>
+            <li><input type="radio" name=" Male" id="Male" /> Male</li>
+            <li><input type="radio" name=" Femail" id="Femail" /> Femail</li>
+            <li>
+              <input type="radio" name="Nonbinary" id="Nonbinary" /> Nonbinary
+            </li>
+            <li>
+              <input type="radio" name="Other" id="Other" />
+              Other
+              <input type="text" class="orther" maxlength="150" name="sub-other"/>
+              <small class="sub-input_other">Maximum of 150 characters.</small>
+            </li>
+          </ul>
+        </div>
+        <div class="get-product active">
+          <h5 class="title">
+            Which of the following products have your purchased in the last 2
+            months. Please check all that apply.
+          </h5>
+          <ul>
+            <li>
+              <input type="checkbox" name="product1" id="product1" /> Product 1
+            </li>
+            <li>
+              <input type="checkbox" name="product2" id="product2" /> Product 2
+            </li>
+            <li>
+              <input type="checkbox" name="product3" id="product3" /> Product 3
+            </li>
+          </ul>
+        </div>
+        <div class="get-need active">
+          <h5 class="title">How often would you use our new product?</h5>
+          <ul>
+            <li><input type="radio" name="get-need" id="daily" /> Daily</li>
+            <li><input type="radio" name="get-need" id="Weekly" /> Weekly</li>
+            <li><input type="radio" name="get-need" id="Monthly" /> Monthly</li>
+          </ul>
+        </div>
+        <div class="price active">
+          <h5 class="title">What would you pay for the new product?</h5>
+          <label for="price">
+            $
+            <div class="dollar">
+              <input type="number" name="price" id="Dollars" /> 
+              <span class="sub-price">Dollars</span>
+            </div> . 
+            <div class="cents">
+              <input type="number" name="price" id="cents" />
+              <span class="sub-cents">Cents</span>
+            </div>
+          </label>
+        </div>
+        <div class="get-feel active">
+          <h5 class="title">
+            What features wourld you like to see in the new product
+          </h5>
+          <textarea name="feel" id="feel" cols="100" rows="5"></textarea>
+        </div>
+        <div class="evaluate">
+          <p class="title">Please rate your level of agreement with the following statements</p>
+          <table>
+            <tr>
+              <th></th>
+              <th>Strongly Disagree</th>
+              <th>Disagree</th>
+              <th>Agree</th>
+              <th>Strongly Agree</th>
+            </tr>
+            <tr>
+              <td class="title">Our products are priced fairly</td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">1</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">2</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">3</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">4</span></td>
+            </tr>
+            <tr>
+              <td class="title">Our products are high quality</td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">1</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">2</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">3</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">4</span></td>
+            </tr>
+            <tr>
+              <td class="title">You would recommend our product to a friend or coworker</td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">1</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">2</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">3</span></td>
+              <td><input type="radio" name="evalute" id="" /> <span class="sub">4</span></td>
+            </tr>
+          </table>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
