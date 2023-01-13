@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      table {
+        width: 600px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      h2 {
+        color: blue;
+      }
+      th {
+        border-right: 1px solid #fff;
+        background-color: orange;
+        color: #fff;
+        padding: 10px;
+      }
+      th:first-child {
+        background-color: red;
+      }
+      td:first-child {
+        color: red;
+      }
+      td:last-child {
+        color: blue;
+      }
+      th:last-child {
+        background-color: blue;
+      }
+      td {
+        border: 1px solid grey;
+        padding: 10px;
+      }
+      tr:nth-child(2) {
+        border-left:none;
+      }
+      span.negative-day {
+        display: block;
+        font-size: 5px;
+      }
+      span.negative-day {
+        display: block;
+        font-size: 10px;
+        margin-top: -10px;
+        transform: translateX(15px);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        <h2>Tháng 10 - October</h2>
+      </caption>
+      <tr>
+        <th>C.Nhật</th>
+        <th>T.Hai</th>
+        <th>T.Ba</th>
+        <th>T.Tư</th>
+        <th>T.Năm</th>
+        <th>T.Sáu</th>
+        <th>T.Bảy</th>
+      </tr>
+      <tr>
+        <td>Sun</td>
+        <td>Mon</td>
+        <td>Tue</td>
+        <td>Wed</td>
+        <td>Thu</td>
+        <td>Fri</td>
+        <td>Sat</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1 <span class="negative-day">13</span></td>
+        <td>2 <span class="negative-day">14</span></td>
+        <td>3 <span class="negative-day">15</span></td>
+      </tr>
+      <tr>
+        <td>4 <span class="negative-day">16</span></td>
+        <td>5 <span class="negative-day">17</span></td>
+        <td>6<span class="negative-day">18</span></td>
+        <td>7 <span class="negative-day">19</span></td>
+        <td>8 <span class="negative-day">20</span></td>
+        <td>9 <span class="negative-day">21</span></td>
+        <td>10 <span class="negative-day">22</span></td>
+      </tr>
+      <tr>
+        <td>11 <span class="negative-day">23</span></td>
+        <td>12 <span class="negative-day">24</span></td>
+        <td>13 <span class="negative-day">25</span></td>
+        <td>14 <span class="negative-day">26</span></td>
+        <td>15<span class="negative-day">27</span></td>
+        <td>16 <span class="negative-day">28</span></td>
+        <td>17 <span class="negative-day">29</span></td>
+      </tr>
+      <tr>
+        <td>18 <span class="negative-day">1.9</span></td>
+        <td>19<span class="negative-day">2</span></td>
+        <td>20<span class="negative-day">3</span></td>
+        <td>21<span class="negative-day">4</span></td>
+        <td>22<span class="negative-day">5</span></td>
+        <td>23<span class="negative-day">6</span></td>
+        <td>24<span class="negative-day">7</span></td>
+      </tr>
+      <tr>
+        <td>25<span class="negative-day">8</span></td>
+        <td>26<span class="negative-day">9</span></td>
+        <td>27<span class="negative-day">10</span></td>
+        <td>28<span class="negative-day">11</span></td>
+        <td>29<span class="negative-day">12</span></td>
+        <td>30<span class="negative-day">13</span></td>
+        <td>31<span class="negative-day">14</span></td>
+      </tr>
+    </table>
+  </body>
+</html>
